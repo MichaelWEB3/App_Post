@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"> <i class="bi bi-easel"></i> Vende_tudo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+
+                <a class="nav-link" href="#">Login</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<style>
+
+</style>
+
+
+<div class="login">
+    <div class="m-5 ">
+        
+    <h1>Vende tudo</h1>
+    
+        <form action="/perfil" method="POST">
+
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" required class="input" id="email" placeholder="Digite seu email cadatrado">
+
+            <label for="senha" class="form-label">senha</label>
+            <input type="password" name="senha" required class="input" id="senha" placeholder="Digite sua senha cadastrada">
+
+
+
+            <button type="submit" class="submit">LOGIN</button>
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+        <span>Não é cadastrado? <a href="/cadastrar">Cadastre-se</a></span>
+
+    </div>
+
+</div>
+
+
+
+<script>
+    localStorage.setItem("logado", false)
+
+</script>

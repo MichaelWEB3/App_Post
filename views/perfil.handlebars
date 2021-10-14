@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"> <i class="bi bi-easel"></i> Vende_Tudo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+
+                <a class="nav-link" href="/perfil/{{info.email}}">perfil</a>
+                <a class="nav-link" href="/cart">Carrinho</a>
+                <a class="nav-link" id="and" href="/sair">Sair</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="divPerfil">
+    <div class="">
+        <h4> <i class=" "> Seja bem vindo(a) - {{info.nome}}</i> </h4>
+    </div>
+    <div class="">
+        <h4 class=""> <i class="bi bi-emoji-laughing">{{info.apelido}}</i></h4>
+    </div>
+    <div class="">
+        <h4 class=""><i class="bi bi-at"></i> {{info.email}}</h4>
+    </div>
+
+</div>
+
+
+
+
+<div class="divProduto">
+
+    <div class="">
+
+        <form action="/perfil/addPoste/{{info.email}}/{{info.nome}}/{{info.apelido}}" method="POST">
+
+            <div class="form">
+                <h1>Cadastrar produtos</h1>
+                <label for="" class="form-label">Produto</label>
+                <input type="text" name="tituloProduto" class="input" id=""
+                    placeholder="digite titulo">
+
+                <label for="" class="form-label">Imagem</label>
+                <input type="text" name="photo" class="input" id=""
+                    placeholder="caminhdo da Imagem">
+
+                <label for="" class="form-label">preço</label>
+                <input type="number" name="valorProduto" class="input" id=""
+                    placeholder="digite valor do produto">
+            </div>
+            <div class="">
+                <label for="exampleFormControlTextarea1" class="form-label">Descrição do produto</label>
+                <textarea class="input" name="conteudo" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="butaProduto"> <i class="bi bi-pencil-square"></i></button>
+        </form>
+
+    </div>
+</div>
+
+<script>
+    localStorage.setItem("logado", true)
+    localStorage.setItem("emailLogado", info.email)
+    alert(localStorage.getItem(emailLogado))
+</script>
+
+</div>

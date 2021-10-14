@@ -1,0 +1,43 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"> <i class="bi bi-easel"></i> Vende_Tudo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+
+               <a class="nav-link" href="/login">Perfil</a>
+<a class="nav-link" href="/cart">Carrinho</a>
+                <a class="nav-link " id="and" href="/sair">Sair</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+{{#each post}}
+
+
+        <div class="postagem">
+            <h4 class=""> <i class="bi bi-person-bounding-box"></i> {{apelido}}</h4>
+
+            <small><i class="bi bi-pin"></i> Produto:  {{tituloProduto}}</small>
+            <p class=""><i class="bi bi-cash-coin text-success m-1"></i></i> Preço: R$ {{preco}}</p>
+            <p class=""><i class="bi bi-pencil text-primary"></i> Descrição do produto:  {{descricao}}</p> 
+            <img class="photo" src={{photo}}></img>
+            <div class=""><button class="submit2 curtir"> <i class="bi bi-hand-thumbs-up-fill"></i> </button> <button class=" submit2 comentar"><i class="bi bi-filter-square  "></i> </button> <a href="/login"><button class="submit2 comprar"><i class="bi bi-bag"></i> </button></a></div>
+        </div>
+       
+
+
+
+{{else}}
+<h4 class="mt-3">Nenhuma postaem Registrada</h4>
+{{/each}}
