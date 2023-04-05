@@ -1,9 +1,7 @@
 # Projeto de postagem de pensamentos 💻 
-# Intuitive book library
  🖊 
 Softwere fullstack com cadastro e login, voce pode ver as postagens mais recentes e pode postar tambem seus pensamentos !!!!
 
-Software that organizes books by color, alphabetical order and size, and can also be moved by the mouse cursor from one shelf to another.
 Interactive clock !!!!
 ## Funcionalidades   💎 
 
